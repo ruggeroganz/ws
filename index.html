@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WS · Private label self tanning, sun care and spray foundation</title>
+<meta name="description" content="WS creates private label self tanning, sun care and spray foundation for beauty brands. Patented formulas, produced with Biofarma Group in certified Italian facilities.">
+<meta property="og:title" content="WS · Private label self tanning, sun care and spray foundation">
+<meta property="og:description" content="WS creates private label self tanning, sun care and spray foundation for beauty brands. Patented formulas, produced with Biofarma Group in certified Italian facilities.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FCFAF6">
+<style>/* ==========================================================
+   WS · foglio di stile
+   Avorio, ambra, forme fluide. Mobile first.
+   ========================================================== */
+
+:root{
+  --paper:#FCFAF6;
+  --paper-2:#F4EEE4;
+  --amber:#B57F35;
+  --amber-soft:#E6D3B4;
+  --tan:#8C5E28;
+  --ink:#1C1A17;
+  --ink-70:rgba(28,26,23,.7);
+  --ink-50:rgba(28,26,23,.52);
+  --rule:rgba(28,26,23,.14);
+
+  --serif:Georgia,"Iowan Old Style","Times New Roman",Times,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+  --gut:clamp(20px,5vw,72px);
+  --sec:clamp(56px,8vw,116px);
+  --maxw:1400px;
+  --ease:cubic-bezier(.22,.8,.25,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--sans);
+  font-size:clamp(15px,.5vw + 13.5px,16.5px);
+  line-height:1.6;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  padding-top:var(--head-h,64px);
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--amber);color:var(--paper)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.shell{width:100%;max-width:var(--maxw);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+
+/* ---------- tipografia ---------- */
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
+.d1{font-size:clamp(2.3rem,7.6vw,4.7rem);line-height:1.02}
+.d2{font-size:clamp(1.9rem,4.2vw,3.2rem);line-height:1.06;max-width:18ch}
+.d3{font-size:clamp(1.2rem,1vw + .9rem,1.55rem);line-height:1.2}
+.lede{font-size:clamp(1.02rem,.5vw + .9rem,1.18rem);line-height:1.5;color:var(--ink-70);max-width:44ch}
+.small{font-size:.88rem;color:var(--ink-50)}
+.eyebrow{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);font-weight:500}
+
+/* ---------- testata ---------- */
+.head{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(252,250,246,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .4s ease}
+.head.stuck{border-bottom-color:var(--rule)}
+.head .in{display:flex;align-items:center;justify-content:space-between;height:var(--head-h,64px);gap:24px}
+.logo{font-family:var(--serif);font-size:1.35rem;letter-spacing:.22em;padding-left:.22em}
+.nav{display:flex;align-items:center;gap:clamp(18px,2.4vw,34px)}
+.nav .nl{display:none;font-size:.9rem;color:var(--ink-70);transition:color .25s}
+.nav .nl:hover{color:var(--ink)}
+@media(min-width:880px){:root{--head-h:76px}.nav .nl{display:inline}}
+
+/* ---------- pulsanti ---------- */
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:13px 24px;font-size:.93rem;line-height:1.2;border:1px solid var(--ink);transition:background .3s,color .3s,border-color .3s}
+.pill:hover{background:var(--ink);color:var(--paper)}
+.pill-fill{background:var(--ink);color:var(--paper)}
+.pill-fill:hover{background:var(--amber);border-color:var(--amber)}
+.pill-sm{padding:9px 18px;font-size:.86rem}
+.link-u{border-bottom:1px solid var(--rule);transition:border-color .25s}
+.link-u:hover{border-color:var(--amber)}
+
+/* ---------- sezioni ---------- */
+.sec{padding:var(--sec) 0}
+.sec-hd .d2{max-width:none}
+.sec-hd{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(24px,3.4vw,48px)}
+
+/* ---------- apertura ---------- */
+.hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,64px) 0 clamp(36px,6vw,84px)}
+.hero .in{display:grid;grid-template-columns:1fr;gap:clamp(34px,5vw,72px);align-items:center}
+.hero h1 .ln{display:block}
+.rot{display:block;position:relative;height:1.14em;overflow:hidden;margin:-.02em 0 -.1em}
+.rot span{position:absolute;left:0;top:0;white-space:nowrap;transform:translateY(110%);transition:transform .8s var(--ease)}
+.rot span.on{transform:translateY(0)}
+.rot span.out{transform:translateY(-110%)}
+.hero .lede{margin-top:clamp(18px,2vw,26px)}
+.hero .cta{margin-top:clamp(22px,3vw,34px);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+.stage{position:relative;width:min(88%,520px);margin:0 auto}
+.stage::before{content:"";position:absolute;inset:6% -8% -6% 10%;background:var(--amber-soft);border-radius:44% 56% 62% 38% / 42% 44% 56% 58%;animation:morph 18s ease-in-out infinite alternate-reverse}
+.blob{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:58% 42% 46% 54% / 48% 56% 44% 52%;animation:morph 14s ease-in-out infinite alternate;background:var(--paper-2)}
+.blob img{width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+@keyframes morph{
+  0%{border-radius:58% 42% 46% 54% / 48% 56% 44% 52%}
+  50%{border-radius:42% 58% 60% 40% / 56% 42% 58% 44%}
+  100%{border-radius:50% 50% 38% 62% / 40% 60% 40% 60%}
+}
+.seal{position:absolute;left:0;bottom:4%;width:clamp(104px,14vw,142px);aspect-ratio:1;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 32s linear infinite}
+.seal text{font-family:var(--sans);font-size:9.4px;letter-spacing:.14em;fill:var(--paper)}
+.seal b{font-family:var(--serif);font-weight:400;font-size:1.5rem;letter-spacing:.14em;padding-left:.14em}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(min-width:900px){
+  .hero .in{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+  .stage{margin:0 0 0 auto}
+  .seal{left:-6%}
+}
+
+/* ---------- cosa facciamo ---------- */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--gut) * -1) clamp(18px,2.6vw,32px);padding:2px var(--gut)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1px solid var(--rule);border-radius:999px;padding:11px 20px;font-size:.95rem;white-space:nowrap;transition:background .3s,color .3s,border-color .3s}
+.tab:hover{border-color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+@media(min-width:700px){.tabs{margin-left:0;margin-right:0;padding:2px 0}}
+
+.panel{display:grid;grid-template-columns:1fr;gap:clamp(22px,4vw,64px);align-items:center}
+.panel[hidden]{display:none}
+.panel.fade{animation:panelIn .6s var(--ease)}
+@keyframes panelIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(min-width:900px){.panel{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
+.vis{position:relative;aspect-ratio:5/4;border-radius:clamp(26px,4vw,48px);overflow:hidden;background:var(--paper-2)}
+.vis img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.panel h3{font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.08;max-width:16ch}
+.panel p{margin:14px 0 20px;color:var(--ink-70);max-width:40ch}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{border:1px solid var(--rule);border-radius:999px;padding:7px 14px;font-size:.86rem;color:var(--ink-70)}
+.lead-tag{display:inline-block;margin-bottom:12px;font-size:.84rem;color:var(--amber)}
+
+/* ---------- marchi ---------- */
+.marq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.track{display:flex;width:max-content;gap:clamp(12px,1.4vw,22px);animation:slide 64s linear infinite}
+@keyframes slide{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+.cc{flex:0 0 auto;width:clamp(180px,42vw,270px)}
+.cc:nth-child(even){margin-top:clamp(18px,3vw,44px)}
+.cc .ph{aspect-ratio:3/4;overflow:hidden;background:var(--paper-2);border-radius:clamp(20px,2.4vw,30px)}
+.cc .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.cc:hover .ph img{transform:scale(1.05)}
+.cc .cap{display:flex;justify-content:space-between;gap:10px;margin-top:10px;padding:0 4px;font-size:.88rem}
+.cc .cap b{font-family:var(--serif);font-weight:400;font-size:1rem}
+.cc .cap span{color:var(--ink-50)}
+
+/* ---------- qualita ---------- */
+.q{background:var(--ink);color:var(--paper);border-radius:clamp(28px,5vw,64px);margin:0 clamp(8px,1.4vw,20px)}
+.q .top{display:grid;grid-template-columns:1fr;gap:clamp(22px,4vw,64px);align-items:end;margin-bottom:clamp(30px,5vw,64px)}
+@media(min-width:900px){.q .top{grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}}
+.q .d2{max-width:14ch}
+.q .lede{color:rgba(252,250,246,.72)}
+.facts{list-style:none;display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:clamp(34px,5vw,64px)}
+@media(min-width:700px){.facts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.facts li{display:flex;align-items:center;gap:14px;padding:13px 20px;border-radius:999px;background:rgba(252,250,246,.07)}
+.facts svg{flex:0 0 auto;width:26px;height:26px;stroke:var(--amber-soft);fill:none;stroke-width:1.4}
+
+.seals{display:grid;grid-auto-flow:column;grid-auto-columns:44%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 calc(var(--gut) * -1);padding:0 var(--gut);scroll-padding:0 var(--gut)}
+.seals::-webkit-scrollbar{display:none}
+.seals .seal-c{scroll-snap-align:start}
+@media(min-width:620px){.seals{grid-auto-flow:row;grid-auto-columns:auto;overflow:visible;margin:0;padding:0;gap:clamp(10px,1.6vw,22px)}}
+@media(min-width:620px){.seals{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:1100px){.seals{grid-template-columns:repeat(8,minmax(0,1fr))}}
+.seal-c{perspective:900px;aspect-ratio:1;width:100%}
+.seal-c .inner{display:block;position:relative;width:100%;height:100%;transition:transform .8s var(--ease);transform-style:preserve-3d}
+.seal-c.flip .inner{transform:rotateY(180deg)}
+@media(hover:hover){.seal-c:hover .inner{transform:rotateY(180deg)}}
+.face{display:flex;position:absolute;inset:0;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14%;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.face.fr{border:1px solid rgba(252,250,246,.28)}
+.face.fr::before{content:"";position:absolute;inset:7%;border-radius:50%;border:1px dashed rgba(230,211,180,.35)}
+.face.fr b{font-family:var(--serif);font-weight:400;font-size:clamp(1.05rem,2.4vw,1.6rem);line-height:1.1}
+.face.fr span{margin-top:6px;font-size:clamp(.7rem,1.2vw,.82rem);color:rgba(252,250,246,.62);line-height:1.3}
+.face.bk{background:var(--amber);color:var(--paper);transform:rotateY(180deg);font-size:clamp(.72rem,1.3vw,.9rem);line-height:1.35}
+.q .foot-l{margin-top:clamp(24px,3vw,40px);display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;font-size:.88rem;color:rgba(252,250,246,.6)}
+.q .pill{border-color:rgba(252,250,246,.4)}
+.q .pill:hover{background:var(--paper);color:var(--ink)}
+
+/* ---------- processo ---------- */
+.steps{list-style:none;display:grid;grid-template-columns:1fr;gap:10px}
+.step{position:relative;border-radius:clamp(22px,3vw,36px);background:var(--paper-2);padding:22px 24px;text-align:left;width:100%;transition:background .5s,flex-grow .7s var(--ease)}
+.step .n{font-size:.8rem;color:var(--amber)}
+.step h3{font-size:clamp(1.25rem,1.4vw + .8rem,1.8rem);margin:6px 0 6px}
+.step p{color:var(--ink-70);max-width:30ch;font-size:.95rem}
+@media(min-width:880px){
+  .steps{display:flex;gap:12px;height:clamp(300px,30vw,380px)}
+  .steps li{display:flex;flex:1 1 0;min-width:0;transition:flex-grow .7s var(--ease)}
+  .steps li.on{flex-grow:2.3}
+  .step{display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,2.4vw,34px)}
+  .steps li.on .step{background:var(--amber-soft)}
+  .step p{opacity:0;max-height:0;overflow:hidden;transition:opacity .4s,max-height .6s var(--ease)}
+  .steps li.on .step p{opacity:1;max-height:6em;transition-delay:.15s}
+  .step h3{margin-bottom:0}
+}
+
+/* ---------- chiusura, compatta ---------- */
+.close{padding:clamp(8px,2vw,24px) 0 clamp(36px,5vw,64px)}
+.close .card{background:var(--paper-2);border-radius:clamp(26px,4vw,48px);padding:clamp(26px,4.4vw,56px);display:grid;grid-template-columns:1fr;gap:18px;align-items:end}
+.close .d2{max-width:16ch}
+.close p{color:var(--ink-70);margin-top:8px}
+.close .acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+@media(min-width:900px){.close .card{grid-template-columns:minmax(0,1fr) auto;gap:40px}.close .acts{justify-content:flex-end;max-width:460px}}
+
+/* ---------- contatti ---------- */
+.c-hero{padding:clamp(28px,5vw,64px) 0 clamp(20px,3vw,36px)}
+.c-hero .lede{margin-top:14px}
+.c-wrap{padding-bottom:clamp(40px,6vw,80px)}
+.c-grid{display:grid;grid-template-columns:1fr;gap:clamp(18px,3vw,40px);align-items:start}
+@media(min-width:900px){.c-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,.5fr)}}
+.c-form{background:var(--paper-2);border-radius:clamp(26px,4vw,44px);padding:clamp(22px,4vw,48px)}
+.c-form fieldset{border:0;margin-bottom:22px}
+.c-form legend,.f label{display:block;font-size:.88rem;color:var(--ink-50);margin-bottom:10px}
+.pick{display:flex;flex-wrap:wrap;gap:8px}
+.pick label{position:relative;display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:9px 16px;font-size:.93rem;cursor:pointer;background:var(--paper);transition:background .25s,color .25s,border-color .25s;margin:0;color:var(--ink)}
+.pick input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.pick label:hover{border-color:var(--ink)}
+.pick label.on{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.pick label:has(input:focus-visible){outline:2px solid var(--amber);outline-offset:2px}
+.f{margin-bottom:18px}
+.f input,.f textarea{width:100%;background:var(--paper);border:1px solid transparent;border-radius:18px;padding:14px 16px;font-family:var(--sans);font-size:1rem;color:var(--ink);transition:border-color .25s}
+.f textarea{min-height:150px;resize:vertical;border-radius:22px}
+.f input:focus,.f textarea:focus{outline:none;border-color:var(--amber)}
+.pair{display:grid;grid-template-columns:1fr;gap:0}
+@media(min-width:600px){.pair{grid-template-columns:1fr 1fr;gap:14px}}
+.agree{display:flex;gap:12px;align-items:flex-start;font-size:.85rem;color:var(--ink-70);margin:6px 0 22px}
+.agree input{margin-top:4px;accent-color:var(--amber)}
+.hp{position:absolute;left:-9999px;opacity:0}
+.c-side{padding:clamp(4px,1vw,12px) 4px}
+.c-side h2{font-size:1.2rem;margin-bottom:6px}
+.c-side p{color:var(--ink-70);font-size:.95rem;margin-bottom:22px}
+
+/* ---------- pagine di testo ---------- */
+.doc{max-width:70ch;padding:clamp(34px,5vw,70px) 0 var(--sec)}
+.doc h2{margin:clamp(26px,3vw,42px) 0 12px;font-size:clamp(1.15rem,1vw + .9rem,1.45rem)}
+.doc p,.doc li{color:var(--ink-70);margin-bottom:12px}
+.doc ul{margin:0 0 12px 20px}
+.doc table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.9rem}
+.doc th,.doc td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+.doc th{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-50);font-weight:500}
+
+/* ---------- piede ---------- */
+.foot{border-top:1px solid var(--rule);padding:clamp(28px,3.4vw,48px) 0 clamp(18px,2vw,26px)}
+.foot .g{display:grid;grid-template-columns:1fr 1fr;gap:22px clamp(22px,3vw,48px)}
+.foot .g > div:first-child{grid-column:1 / -1}
+@media(min-width:820px){.foot .g{grid-template-columns:1.4fr 1fr 1fr}.foot .g > div:first-child{grid-column:auto}}
+.foot h4{font-size:.86rem;color:var(--ink-50);margin-bottom:10px;font-weight:400;font-family:var(--sans)}
+.foot a,.foot p{display:block;font-size:.92rem;color:var(--ink-70);margin-bottom:6px;max-width:34ch}
+.foot a:hover{color:var(--amber)}
+.foot .logo{display:inline-block;color:var(--ink);margin-bottom:8px}
+.foot .bot{margin-top:clamp(20px,2.6vw,34px);padding-top:14px;border-top:1px solid var(--rule);font-size:.8rem;color:var(--ink-50)}
+
+/* ---------- banner cookie ---------- */
+.ck{position:fixed;left:12px;right:12px;bottom:12px;z-index:90;background:var(--ink);color:var(--paper);border-radius:24px;transform:translateY(130%);transition:transform .45s var(--ease)}
+.ck.on{transform:translateY(0)}
+.ck .in{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;padding:16px 22px}
+.ck p{font-size:.84rem;opacity:.82;max-width:66ch}
+.ck a{text-decoration:underline}
+.ck .bs{display:flex;gap:8px;flex-wrap:wrap}
+.ck button{font-size:.84rem;padding:9px 18px;border-radius:999px;border:1px solid var(--paper);color:var(--paper)}
+.ck button.pri{background:var(--paper);color:var(--ink)}
+.ck button:hover{opacity:.78}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .blob,.stage::before,.seal svg,.track{animation:none}
+  .marq{overflow-x:auto}
+  .rot span,.seal-c .inner,.step,.steps li,.step p,.panel.fade{transition:none;animation:none}
+}
+</style>
+</head>
+<body>
+
+<header class="head">
+  <div class="shell in">
+    <a class="logo" href="index.html" aria-label="WS home">WS</a>
+    <nav class="nav" aria-label="Main">
+      <a class="nl" href="#make">What we make</a>
+      <a class="nl" href="#quality">Quality</a>
+      <a class="nl" href="#how">Process</a>
+      <a class="pill pill-sm pill-fill" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="shell in">
+    <div>
+      <h1 class="d1">
+        <span class="sr">Private label self tanning, sun care and spray foundation, made in Italy.</span>
+        <span aria-hidden="true">
+          <span class="ln">Private label</span>
+          <span class="rot"><span class="on">self tanning</span><span>sun care</span><span>spray foundation</span></span>
+          <span class="ln">made in Italy.</span>
+        </span>
+      </h1>
+      <p class="lede">Patented formulas for beauty brands, produced with Biofarma Group.</p>
+      <div class="cta">
+        <a class="pill pill-fill" href="contact.html">Start a project</a>
+        <a class="pill" href="#make">What we make</a>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="blob"><img src="images/byneta-editorial.webp" alt="Self tanning line created and produced by WS" width="1920" height="2952"></div>
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+          <text><textPath href="#circ" textLength="286" lengthAdjust="spacing">PATENTED FORMULAS . CERTIFIED PRODUCTION . </textPath></text></svg>
+        <b>WS</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="make" style="padding-top:clamp(20px,3vw,40px)">
+  <div class="shell">
+    <div class="sec-hd">
+      <h2 class="d2">What we make.</h2>
+      <p class="small">Self tanning is where we started. Now there is more.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Product categories">
+      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Self tanning</button>
+      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Sun care SPF</button>
+      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Spray foundation</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+      <div class="vis"><img src="images/byneta-mousse-body.webp" alt="Self tanning mousse produced by WS" loading="lazy"></div>
+      <div>
+        <span class="lead-tag">Our core</span>
+        <h3>A tan that looks like yours.</h3>
+        <p>Streak free colour, tuned to your market and shade range, from cool to warm undertones.</p>
+        <ul class="chips"><li>Mousse</li><li>Spray</li><li>BOV</li></ul>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+      <div class="vis"><img src="images/hero-spray.webp" alt="Sun kissed skin under a clear sky" loading="lazy" style="object-position:50% 30%"></div>
+      <div>
+        <h3>Protection people want to reapply.</h3>
+        <p>Lightweight sun care for face and body, with the SPF level your line needs.</p>
+        <ul class="chips"><li>Face</li><li>Body</li><li>Custom SPF</li><li>Light textures</li></ul>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+      <div class="vis"><img src="images/tanrevel-spray-model.webp" alt="Fine mist sprayed onto the skin" loading="lazy" style="object-position:50% 25%"></div>
+      <div>
+        <h3>Airbrush finish, in one mist.</h3>
+        <p>Buildable coverage in a fine spray, with shades matched to your range.</p>
+        <ul class="chips"><li>Buildable coverage</li><li>Custom shades</li><li>Face and body</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work" style="padding-top:0">
+  <div class="shell">
+    <div class="sec-hd">
+      <h2 class="d2">Brands we produce for.</h2>
+      <p class="small">A selection. Full list on request.</p>
+    </div>
+  </div>
+  <div class="marq">
+    <div class="track">
+      <article class="cc"><div class="ph"><img src="images/byneta-model.webp" alt="BYNETA" loading="lazy"></div><div class="cap"><b>BYNETA</b><span>Israel</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/glod-spray-medium.webp" alt="Glöd" loading="lazy"></div><div class="cap"><b>Glöd</b><span>Norway</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/bare-vogue.webp" alt="Bare by Vogue" loading="lazy"></div><div class="cap"><b>Bare by Vogue</b><span>Ireland</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/tanrevel-lotion-model.webp" alt="Tanrevel" loading="lazy"></div><div class="cap"><b>Tanrevel</b><span>Sweden</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/camilla-lotion-sea.webp" alt="Camilla Pihl" loading="lazy"></div><div class="cap"><b>Camilla Pihl</b><span>Norway</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/glod-mousse-emerald.webp" alt="Glöd" loading="lazy"></div><div class="cap"><b>Glöd</b><span>Norway</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/byneta-mousse-clear.webp" alt="BYNETA" loading="lazy"></div><div class="cap"><b>BYNETA</b><span>Israel</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/tanrevel-duo.webp" alt="Tanrevel" loading="lazy"></div><div class="cap"><b>Tanrevel</b><span>Sweden</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/bare-models.webp" alt="Bare by Vogue" loading="lazy"></div><div class="cap"><b>Bare by Vogue</b><span>Ireland</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/glod-spray-satin.webp" alt="Glöd" loading="lazy"></div><div class="cap"><b>Glöd</b><span>Norway</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/camilla-lotion-beach.webp" alt="Camilla Pihl" loading="lazy"></div><div class="cap"><b>Camilla Pihl</b><span>Norway</span></div></article>
+      <article class="cc"><div class="ph"><img src="images/tanrevel-nightmask.webp" alt="Tanrevel" loading="lazy"></div><div class="cap"><b>Tanrevel</b><span>Sweden</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/byneta-model.webp" alt="" loading="lazy"></div><div class="cap"><b>BYNETA</b><span>Israel</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/glod-spray-medium.webp" alt="" loading="lazy"></div><div class="cap"><b>Glöd</b><span>Norway</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/bare-vogue.webp" alt="" loading="lazy"></div><div class="cap"><b>Bare by Vogue</b><span>Ireland</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/tanrevel-lotion-model.webp" alt="" loading="lazy"></div><div class="cap"><b>Tanrevel</b><span>Sweden</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/camilla-lotion-sea.webp" alt="" loading="lazy"></div><div class="cap"><b>Camilla Pihl</b><span>Norway</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/glod-mousse-emerald.webp" alt="" loading="lazy"></div><div class="cap"><b>Glöd</b><span>Norway</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/byneta-mousse-clear.webp" alt="" loading="lazy"></div><div class="cap"><b>BYNETA</b><span>Israel</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/tanrevel-duo.webp" alt="" loading="lazy"></div><div class="cap"><b>Tanrevel</b><span>Sweden</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/bare-models.webp" alt="" loading="lazy"></div><div class="cap"><b>Bare by Vogue</b><span>Ireland</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/glod-spray-satin.webp" alt="" loading="lazy"></div><div class="cap"><b>Glöd</b><span>Norway</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/camilla-lotion-beach.webp" alt="" loading="lazy"></div><div class="cap"><b>Camilla Pihl</b><span>Norway</span></div></article>
+      <article class="cc" aria-hidden="true"><div class="ph"><img src="images/tanrevel-nightmask.webp" alt="" loading="lazy"></div><div class="cap"><b>Tanrevel</b><span>Sweden</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec q" id="quality">
+  <div class="shell">
+    <div class="top">
+      <h2 class="d2">Produced with Biofarma Group.</h2>
+      <p class="lede">Every WS formula is made with Biofarma Group, one of Europe's leading cosmetic manufacturers. It is how we guarantee the same quality in every batch.</p>
+    </div>
+
+    <ul class="facts">
+      <li><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3l8 3v6c0 5-3.4 8.6-8 11-4.6-2.4-8-6-8-11V6z"/><path d="M9 13l3 3 5-6"/></svg><span>All formulas patented</span></li>
+      <li><svg viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="11" r="7"/><path d="M9 17l-2 7 6-3 6 3-2-7"/></svg><span>Major certifications held</span></li>
+      <li><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M4 22V11l9-6 9 6v11"/><path d="M10 22v-6h6v6"/></svg><span>Made in Italy</span></li>
+    </ul>
+
+    <div class="seals">
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="ISO 22716, Cosmetics GMP. Good manufacturing practice for cosmetics">
+        <span class="inner"><span class="face fr"><b>ISO 22716</b><span>Cosmetics GMP</span></span><span class="face bk">Good manufacturing practice for cosmetics</span></span>
+      </button>
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="ISO 9001, Quality management. Controlled, repeatable quality at every stage">
+        <span class="inner"><span class="face fr"><b>ISO 9001</b><span>Quality management</span></span><span class="face bk">Controlled, repeatable quality at every stage</span></span>
+      </button>
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="IFS HPC, Personal care standard. Retailer grade audit for personal care products">
+        <span class="inner"><span class="face fr"><b>IFS HPC</b><span>Personal care standard</span></span><span class="face bk">Retailer grade audit for personal care products</span></span>
+      </button>
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="COSMOS, Organic and natural. Certified organic and natural cosmetics">
+        <span class="inner"><span class="face fr"><b>COSMOS</b><span>Organic and natural</span></span><span class="face bk">Certified organic and natural cosmetics</span></span>
+      </button>
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="FDA, Cosmetic registration. Registered facilities for the US market">
+        <span class="inner"><span class="face fr"><b>FDA</b><span>Cosmetic registration</span></span><span class="face bk">Registered facilities for the US market</span></span>
+      </button>
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="ISO 14001, Environmental. Environmental management system">
+        <span class="inner"><span class="face fr"><b>ISO 14001</b><span>Environmental</span></span><span class="face bk">Environmental management system</span></span>
+      </button>
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="RSPO, Sustainable palm. Mass balance certified palm derivatives">
+        <span class="inner"><span class="face fr"><b>RSPO</b><span>Sustainable palm</span></span><span class="face bk">Mass balance certified palm derivatives</span></span>
+      </button>
+      <button type="button" class="seal-c" aria-pressed="false" aria-label="Halal, Certified. Halal certified production">
+        <span class="inner"><span class="face fr"><b>Halal</b><span>Certified</span></span><span class="face bk">Halal certified production</span></span>
+      </button>
+    </div>
+
+    <div class="foot-l">
+      <span>Tap a seal to see what it covers.</span>
+      <a class="pill pill-sm" href="https://www.biofarmagroup.com/en/services/certification-and-licenses" target="_blank" rel="noopener">View the certificates</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="shell">
+    <div class="sec-hd">
+      <h2 class="d2">From brief to pallet.</h2>
+    </div>
+    <ol class="steps">
+      <li class="on"><div class="step" tabindex="0"><span class="n">01</span><div><h3>Brief</h3><p>Your idea, your market, your volume.</p></div></div></li>
+      <li><div class="step" tabindex="0"><span class="n">02</span><div><h3>Formula</h3><p>Development on our patented bases, with samples to test.</p></div></div></li>
+      <li><div class="step" tabindex="0"><span class="n">03</span><div><h3>Compliance</h3><p>Testing, safety assessment and CPNP notification.</p></div></div></li>
+      <li><div class="step" tabindex="0"><span class="n">04</span><div><h3>Production</h3><p>Filling, packaging and delivery from certified facilities.</p></div></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="close">
+  <div class="shell">
+    <div class="card">
+      <div>
+        <h2 class="d2">Tell us about your project.</h2>
+        <p>A few lines are enough. We will set up a call to discuss it.</p>
+      </div>
+      <div class="acts">
+        <a class="pill pill-sm" href="contact.html?topic=self-tanning">Self tanning</a>
+        <a class="pill pill-sm" href="contact.html?topic=sun-care">Sun care</a>
+        <a class="pill pill-sm" href="contact.html?topic=spray-foundation">Spray foundation</a>
+        <a class="pill pill-fill" href="contact.html">Start a project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="g">
+      <div>
+        <a class="logo" href="index.html">WS</a>
+        <p>Private label self tanning, sun care and spray foundation. Produced with Biofarma Group in Italy.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#make">What we make</a>
+        <a href="#work">Brands</a>
+        <a href="#quality">Quality</a>
+        <a href="#how">Process</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html">Start a project</a>
+        <a data-mail href="#">business@wsdream.it</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="cookies.html">Cookie policy</a>
+        <a href="#" data-ck-open>Cookie preferences</a>
+      </div>
+    </div>
+    <div class="bot">&copy; <span id="yr">2026</span> WS. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="ck" role="dialog" aria-label="Cookie notice">
+  <div class="shell in">
+    <p>We use only technical cookies needed for the site to work. No profiling, no advertising trackers. See the <a href="cookies.html">cookie policy</a>.</p>
+    <div class="bs">
+      <button type="button" data-ck="essential">Essential only</button>
+      <button type="button" class="pri" data-ck="all">Understood</button>
+    </div>
+  </div>
+</div>
+
+<script>/* ==========================================================
+   WS · script
+   ========================================================== */
+(function () {
+  "use strict";
+
+  var MB = ["business", "wsdream", "it"];
+  function mail() { return MB[0] + "@" + MB[1] + "." + MB[2]; }
+  var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function fillMail() {
+    var n = document.querySelectorAll("[data-mail]");
+    for (var i = 0; i < n.length; i++) {
+      if (!n[i].hasAttribute("data-mail-keep")) n[i].textContent = mail();
+      if (n[i].tagName === "A") n[i].setAttribute("href", "mailto:" + mail());
+    }
+  }
+
+  function head() {
+    var h = document.querySelector(".head");
+    if (!h) return;
+    var t = false;
+    function run() { h.classList.toggle("stuck", (window.pageYOffset || 0) > 8); t = false; }
+    window.addEventListener("scroll", function () { if (!t) { t = true; requestAnimationFrame(run); } }, { passive: true });
+    run();
+  }
+
+  /* parola che ruota nel titolo */
+  function rotator() {
+    var r = document.querySelector(".rot");
+    if (!r || still) return;
+    var w = r.querySelectorAll("span"), i = 0;
+    if (w.length < 2) return;
+    setInterval(function () {
+      if (document.hidden) return;
+      var cur = w[i]; i = (i + 1) % w.length; var nxt = w[i];
+      cur.classList.remove("on"); cur.classList.add("out");
+      nxt.classList.remove("out");
+      void nxt.offsetWidth;
+      nxt.classList.add("on");
+      setTimeout(function () { cur.style.transition = "none"; cur.classList.remove("out"); void cur.offsetWidth; cur.style.transition = ""; }, 850);
+    }, 2600);
+  }
+
+  /* schede prodotto */
+  function tabs() {
+    var list = document.querySelector("[role=tablist]");
+    if (!list) return;
+    var t = list.querySelectorAll("[role=tab]");
+    function show(k, focus) {
+      for (var i = 0; i < t.length; i++) {
+        var on = i === k, p = document.getElementById(t[i].getAttribute("aria-controls"));
+        t[i].setAttribute("aria-selected", on ? "true" : "false");
+        t[i].tabIndex = on ? 0 : -1;
+        if (on) { p.hidden = false; p.classList.remove("fade"); void p.offsetWidth; p.classList.add("fade"); }
+        else p.hidden = true;
+      }
+      if (focus) t[k].focus();
+    }
+    for (var i = 0; i < t.length; i++) {
+      (function (k) {
+        t[k].addEventListener("click", function () { show(k); });
+        t[k].addEventListener("keydown", function (e) {
+          if (e.key === "ArrowRight") { e.preventDefault(); show((k + 1) % t.length, true); }
+          if (e.key === "ArrowLeft") { e.preventDefault(); show((k - 1 + t.length) % t.length, true); }
+        });
+      })(i);
+    }
+  }
+
+  /* sigilli certificazioni, tocco per girare */
+  function seals() {
+    var s = document.querySelectorAll(".seal-c");
+    for (var i = 0; i < s.length; i++) {
+      s[i].addEventListener("click", function () {
+        var on = this.classList.toggle("flip");
+        this.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    }
+  }
+
+  /* passaggi del processo */
+  function steps() {
+    var li = document.querySelectorAll(".steps li");
+    function act(k) { for (var i = 0; i < li.length; i++) li[i].classList.toggle("on", i === k); }
+    for (var i = 0; i < li.length; i++) {
+      (function (k) {
+        var b = li[k].querySelector(".step");
+        li[k].addEventListener("mouseenter", function () { act(k); });
+        b.addEventListener("focus", function () { act(k); });
+        b.addEventListener("click", function () { act(k); });
+      })(i);
+    }
+  }
+
+  var KEY = "ws_cookie_choice";
+  function store(v) {
+    try { localStorage.setItem(KEY, v); }
+    catch (e) { document.cookie = KEY + "=" + v + ";path=/;max-age=15552000;SameSite=Lax"; }
+  }
+  function read() {
+    try { var v = localStorage.getItem(KEY); if (v) return v; } catch (e) {}
+    var m = document.cookie.match(/(?:^|;\s*)ws_cookie_choice=([^;]+)/);
+    return m ? m[1] : null;
+  }
+  function cookies() {
+    var b = document.querySelector(".ck");
+    if (!b) return;
+    if (!read()) setTimeout(function () { b.classList.add("on"); }, 900);
+    b.addEventListener("click", function (ev) {
+      var t = ev.target.closest("[data-ck]");
+      if (!t) return;
+      store(t.getAttribute("data-ck"));
+      b.classList.remove("on");
+    });
+    var o = document.querySelectorAll("[data-ck-open]");
+    for (var i = 0; i < o.length; i++) {
+      o[i].addEventListener("click", function (ev) { ev.preventDefault(); b.classList.add("on"); });
+    }
+  }
+
+  function form() {
+    var f = document.getElementById("ws-form");
+    if (!f) return;
+    var picks = f.querySelectorAll(".pick input");
+    function sync() { for (var i = 0; i < picks.length; i++) picks[i].parentNode.classList.toggle("on", picks[i].checked); }
+    var q = (location.search.match(/[?&]topic=([^&]+)/) || [])[1];
+    for (var i = 0; i < picks.length; i++) {
+      if (q && picks[i].getAttribute("data-topic") === decodeURIComponent(q)) picks[i].checked = true;
+      picks[i].addEventListener("change", sync);
+    }
+    sync();
+    f.addEventListener("submit", function (ev) {
+      var hp = f.querySelector('input[name="_honey"]');
+      if (hp && hp.value !== "") { ev.preventDefault(); return; }
+      var chosen = [];
+      for (var i = 0; i < picks.length; i++) if (picks[i].checked) chosen.push(picks[i].value);
+      var h = f.querySelector('input[name="Interest"]');
+      if (h) h.value = chosen.length ? chosen.join(", ") : "Not specified";
+      f.setAttribute("action", "https://formsubmit.co/" + mail());
+      var b = f.querySelector('button[type="submit"]');
+      if (b) { b.textContent = "Sending"; b.disabled = true; }
+    });
+  }
+
+  function year() {
+    var y = document.getElementById("yr");
+    if (y) y.textContent = new Date().getFullYear();
+  }
+
+  function init() { fillMail(); head(); rotator(); tabs(); seals(); steps(); cookies(); form(); year(); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>
+</body>
+</html>
