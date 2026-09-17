@@ -37,6 +37,7 @@ email di attivazione su business@wsdream.it.
 Il modulo invia Interest (categorie scelte), Message, Name, Email.
 I link contact.html?topic=self-tanning, sun-care, spray-foundation
 preselezionano la categoria.
-Carosello marchi: l'ordine alterna i marchi, anche nel punto in cui la
-sequenza ricomincia. Se aggiungi foto, evita due marchi uguali vicini e
-controlla che il primo e l'ultimo siano diversi.
+Carosello marchi: evita due marchi uguali vicini e controlla che il primo
+e l'ultimo siano diversi, perche la sequenza si ripete.
+Per cambiare un'immagine: metti il file in images/ e aggiorna src dentro
+il tag img corrispondente in index.html.

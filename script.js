@@ -57,6 +57,12 @@
       }
       if (focus) t[k].focus();
     }
+    var jump = document.querySelectorAll("[data-tab]");
+    for (var q = 0; q < jump.length; q++) {
+      jump[q].addEventListener("click", function () {
+        for (var i = 0; i < t.length; i++) if (t[i].id === this.getAttribute("data-tab")) show(i);
+      });
+    }
     for (var i = 0; i < t.length; i++) {
       (function (k) {
         t[k].addEventListener("click", function () { show(k); });
